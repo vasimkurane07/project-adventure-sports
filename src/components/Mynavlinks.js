@@ -12,6 +12,7 @@ function Mynavlinks(){
     <Link to={"/Virtual"}>Virtual|</Link>
     <Link to={"/ATV"}>ATV|</Link>
     <Link to={"/Contactus"}>Contactus|</Link>
+    <Link to={"/Login"}>Login|</Link>
   </>
 );
 }

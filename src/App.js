@@ -10,6 +10,7 @@ import Virtual from "./components/Virtual";
 import ATV from "./components/ATV";
 import Bungee from "./components/Bungee";
 import Contactus from "./components/Contactus";
+import Login from "./components/Login";
 function App() {
   return (
    <>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/ATV" element={<ATV/>}/>
           <Route path="/trampoline" element={<Bungee/>}/>
           <Route path="/Contactus" element={<Contactus/>}/>
+          <Route path="/Login" element={<Login/>}/>
           
 </Routes>
 
