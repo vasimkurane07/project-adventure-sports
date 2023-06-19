@@ -49,7 +49,7 @@ const Login = () => {
   return (
     <div className="container">
       <div className="formbox">
-        <h1 id="title">Sign Up</h1>
+        <h1 id="title">Sign IN</h1>
         <form>
           <div className="input-group">
             <div className="input-field">

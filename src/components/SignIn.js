@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "./SignInForm.css";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
-
+import { useNavigate } from "react-router-dom";
 const SignIn = () => {
-  
+  const navigate = useNavigate();
+  let login=()=>{
+    navigate("/login")
+  }
 
  
     let [user, setUser] = useState({
@@ -96,7 +99,7 @@ const SignIn = () => {
             </button>
               <button
               type="submit"
-              
+              onClick={login}
               id="SignInBtn"
               className="Disable1"
             >

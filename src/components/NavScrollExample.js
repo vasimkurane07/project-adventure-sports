@@ -13,6 +13,23 @@ import { useNavigate } from "react-router-dom";
 
 function NavScrollExample() {
   const navigate = useNavigate();
+  let SignIn=()=>{
+    navigate("/SignIn")
+  }
+let book=()=>{
+  navigate("/Booking")
+}
+  let about=()=>{
+
+    navigate("/Aboutus")
+  }
+
+  let SignUp=()=>{
+    navigate("/login")
+  }
+let contact=()=>{
+  navigate("/Contactus")
+}
   let chess=()=>{
     navigate("/Chess")
   }
@@ -32,7 +49,7 @@ function NavScrollExample() {
   let navi3=()=>{
     navigate("/circadian")
   }
-  let navi4=()=>{"/circadian"}
+  let navi4=()=>{"/Rappling"}
   let navi5=()=>{}
   let navi6=()=>{}
   let navi7=()=>{
@@ -90,25 +107,25 @@ function NavScrollExample() {
                   aria-expanded="false"
                   style={{ color: "burlywood" }}
                 >
-                  Dropdown
+                  More
                 </a>
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                    Restaurent
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Restaurent
+                    <a className="dropdown-item" href="#" onClick={about}>
+                      About us
                     </a>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Shooping
+                    <a className="dropdown-item" href="#" onClick={contact}>
+                      Contact Us
                     </a>
                   </li>
                 </ul>
@@ -118,11 +135,14 @@ function NavScrollExample() {
               </li>
             </ul>
             <div className="d-flex" role="search">
-              <button className="btn btn-warning me-2" type="submit">
+              <button className="btn btn-warning me-2" type="submit" onClick={SignUp}>
                 Sign In
               </button>
-              <button className="btn btn-warning" type="submit">
+              <button className="btn btn-warning me-1" type="submit"onClick={SignIn}>
                 Sign Up
+              </button>
+              <button className="btn btn-warning" type="submit"onClick={book}>
+                Booking
               </button>
             </div>
           </div>
@@ -286,7 +306,7 @@ function NavScrollExample() {
  <img src="https://www.dellaadventure.com/uploads/8202rocket-ejector-outside-img.jpg" className="card-img-top" alt="..."/>
 <div className="card-body">
  <h5 className="card-title">2 thriller factor</h5>
- <h1 className="card-text">BUNGEE TRAMPOLINE</h1>
+ <h1 className="card-text">JUMPING IJECTOR</h1>
  <a href="#" className="btn btn-warning" onClick={navi8}>View activity</a>
 </div>
 </div>
@@ -294,7 +314,7 @@ function NavScrollExample() {
  <img src="https://www.dellaadventure.com/uploads/4499High%20Rope%20Challenge.JPG" className="card-img-top" alt="..."/>
  <div className="card-body">
    <h5 className="card-title">Card title</h5>
-   <h1 className="card-text">BUNGEE TRAMPOLINE</h1>
+   <h1 className="card-text">HIGH ROPE CHALLENGE</h1>
    <a href="#" className="btn btn-warning" onClick={navi9}>View activity</a>
  </div>
 </div>

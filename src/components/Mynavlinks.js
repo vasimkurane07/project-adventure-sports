@@ -17,6 +17,7 @@ function Mynavlinks(){
     <Link to={"/HighRope"}>HighRope|</Link>
     <Link to={"/Updateid"}>Update|</Link>
     <Link to={"/SignIn"}>SignIn|</Link>
+    <Link to={"/Aboutus"}>Aboutus|</Link>
   </>
 );
 }

@@ -15,13 +15,16 @@ import Circadian from "./components/Circadian";
 import HighRope from "./components/HighRope";
 import Updateid from "./components/Updateid";
 import SignIn from "./components/SignIn";
+import Rappling from "./components/Rappling";
+import Aboutus from "./components/Aboutus";
+import Booking from "./components/Booking";
 function App() {
   return (
    <>
    <BrowserRouter>
    <Mynavlinks/>
    <Routes>
-   <Route path="/" element={<Home/>} />
+   
           <Route path="/Chess" element={<Chess/>} />
           <Route path="/Carrom" element={<Carrom/>} />
           <Route path="/Racecars" element={<Racecars/>} />
@@ -35,6 +38,9 @@ function App() {
           <Route path="/HighRope" element={<HighRope/>}/>
           <Route path="/Updateid" element={<Updateid/>}/>
           <Route path="/SignIn" element={<SignIn/>}/>
+          <Route path="/Rappling" element={<Rappling/>}/>
+          <Route path="/Aboutus" element={<Aboutus/>}/>
+          <Route path="/Booking" element={<Booking/>}/>
 </Routes>
 
 
@@ -46,10 +52,3 @@ function App() {
 export default App;
 
 
-function Home(){
-  return(
-    <>
-    <h1>hellloooouu</h1>
-    </>
-  )
-}
