@@ -123,7 +123,11 @@ function Bungee() {
       >
         <div className="col-sm-12 col-md-12 alert alert-warning p-3 m-0 bg-dark">
           <h4>Safety Measures</h4>
-          <h5 style={{ color: "white" }}>NA</h5>
+          <ol style={{ color: "white" }}>
+            <li>For kids upto 4.6' height.</li>
+            <li>Max weight 40kgs.</li>
+            <li>Harness will be provided.</li>
+          </ol>
         </div>
       </div>
     </>

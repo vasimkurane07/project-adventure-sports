@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import "./ATV.css";
-function ATV() {
+import "./RocketEjector.css";
+function RocketEjector() {
   const navigate = useNavigate();
 
   return (
@@ -88,18 +88,27 @@ function ATV() {
       </nav>
       <div className="row justify-content-center w-100 m-0">
         <div className="col-sm-12 col-md-6 alert alert-warning p-3 m-0">
-          <h3>ATV</h3>
+          <h3>Rocket Ejector </h3>
           <p>
-            Embark on an unforgettable experience like no other and that too an
-            exhilarating one with the mighty 700cc Yamaha Raptor ATV Ride on
-            India's first permanent dirt track. Get ready for the ride of your
-            life! This adrenaline-charged experience on the 250 metre dirt track
-            brings maximum fun to the youth. Thrill seekers, wait no longer tame
-            the beast and unleash the monster deep within you.
+            Come and experience euphoria with our very own Rocket Ejector –
+            India's highest Rocket Ejector – which catapults you four and a half
+            floors high up into the sky. You will be strapped to the seat with 5
+            -point safety belts.The high tension elastic rope catapult will
+            shoot you up, and gravity will pull you back down. In a few
+            thrilling moments, this bouncing decreases and the pulse stabilizes.
+            Rocket Ejector gives you the opportunity to experience an extreme
+            sport whilst having fun, your safety guaranteed with the highest
+            standards of quality-controlled equipment as well as trained
+            professionals standing by – so you can very well leave your
+            inhibitions at the ground and soar high into the sky!!.
           </p>
         </div>
         <div className="col-sm-12 col-md-6 img-div">
-          <img src="assests/images/ATV.jpg" className="img-fluid" alt="..." />
+          <img
+            src="assests/images/RocketEjector.jpg"
+            className="img-fluid"
+            alt="..."
+          />
         </div>
       </div>
       <div
@@ -119,16 +128,8 @@ function ATV() {
         <div className="col-sm-12 col-md-12 alert alert-warning p-3 m-0 bg-dark">
           <h4>Safety Measures</h4>
           <ol style={{ color: "white" }}>
-            <li>
-              Helmet, Elbow & Knee guard is provided and is to be worn at all
-              times.
-            </li>
-            <li>
-              Do not operate the ATV at excessive speeds. Ride at a speed that
-              is proper for the terrain visibility conditions and your
-              experience.
-            </li>
-            <li>Children are allowed only with the 'Marshals'.</li>
+            <li>Max Weight: 90 kgs.</li>
+            <li>Harnesses available.</li>
             <li>
               If you are pregnant, have a heart condition, neck or back
               problems, epilepsy, a neurological disorder you should not
@@ -145,4 +146,4 @@ function ATV() {
   );
 }
 
-export default ATV;
+export default RocketEjector;

@@ -12,7 +12,11 @@ function Mynavlinks(){
     <Link to={"/Virtual"}>Virtual|</Link>
     <Link to={"/ATV"}>ATV|</Link>
     <Link to={"/Contactus"}>Contactus|</Link>
-    <Link to={"/Login"}>Login|</Link>
+    <Link to={"/login"}>Login|</Link>
+    <Link to={"/circadian"}>Circadian|</Link>
+    <Link to={"/HighRope"}>HighRope|</Link>
+    <Link to={"/Updateid"}>Update|</Link>
+    <Link to={"/SignIn"}>SignIn|</Link>
   </>
 );
 }

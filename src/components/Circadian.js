@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import "./ATV.css";
-function ATV() {
+import "./Bungee.css";
+function Bungee() {
   const navigate = useNavigate();
 
   return (
@@ -88,18 +88,25 @@ function ATV() {
       </nav>
       <div className="row justify-content-center w-100 m-0">
         <div className="col-sm-12 col-md-6 alert alert-warning p-3 m-0">
-          <h3>ATV</h3>
+          <h3>Circadian Cycle</h3>
           <p>
-            Embark on an unforgettable experience like no other and that too an
-            exhilarating one with the mighty 700cc Yamaha Raptor ATV Ride on
-            India's first permanent dirt track. Get ready for the ride of your
-            life! This adrenaline-charged experience on the 250 metre dirt track
-            brings maximum fun to the youth. Thrill seekers, wait no longer tame
-            the beast and unleash the monster deep within you.
+            Buckle yourself, fasten your seatbelts and cycle your way through
+            our Circadian Cycle! Experience anti gravitational pull and cycle
+            your way into good times! One of a kind unique activity recently
+            added to the 50+ thrilling activities at Della Adventure Park - it’s
+            truly a must try. You can literally live upto the phrase ‘what goes
+            round comes back around’. The activity let’s you use not only muscle
+            power but also will ensure you balance it out well! The Circadian
+            Cycle is a unique experience to indulge in as it will definitely
+            blow your mind away!
           </p>
         </div>
         <div className="col-sm-12 col-md-6 img-div">
-          <img src="assests/images/ATV.jpg" className="img-fluid" alt="..." />
+          <img
+            src="assests/images/Circadian.jpg"
+            className="img-fluid"
+            alt="..."
+          />
         </div>
       </div>
       <div
@@ -119,25 +126,9 @@ function ATV() {
         <div className="col-sm-12 col-md-12 alert alert-warning p-3 m-0 bg-dark">
           <h4>Safety Measures</h4>
           <ol style={{ color: "white" }}>
-            <li>
-              Helmet, Elbow & Knee guard is provided and is to be worn at all
-              times.
-            </li>
-            <li>
-              Do not operate the ATV at excessive speeds. Ride at a speed that
-              is proper for the terrain visibility conditions and your
-              experience.
-            </li>
-            <li>Children are allowed only with the 'Marshals'.</li>
-            <li>
-              If you are pregnant, have a heart condition, neck or back
-              problems, epilepsy, a neurological disorder you should not
-              participate in the above activity.
-            </li>
-            <li>
-              You must not be under the influence of Alcohol, Drugs or any other
-              substance that may affect your senses.
-            </li>
+            <li>For kids upto 4.6' height.</li>
+            <li>Max weight 40kgs.</li>
+            <li>Harness will be provided.</li>
           </ol>
         </div>
       </div>
@@ -145,4 +136,4 @@ function ATV() {
   );
 }
 
-export default ATV;
+export default Bungee;

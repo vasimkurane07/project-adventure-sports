@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+}
+
+
+.brand h1{
+    color: burlywood;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.img-div img{
+    width: "100%";
+     object-fit:cover;
+}
+
+.pass-div h6{
+    padding: 5px;
+     flex: 2;
+      background-color: goldenrod
+}
+
+a:hover{
+    color: aliceblue;
+    text-decoration-line: underline;
+}
+a::after{
+    bottom: 10;
+}
+
+h3:hover{
+    text-decoration: underline;
+}

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import "./ATV.css";
-function ATV() {
+import "./Shooting.css";
+function Shooting() {
   const navigate = useNavigate();
 
   return (
@@ -88,18 +88,24 @@ function ATV() {
       </nav>
       <div className="row justify-content-center w-100 m-0">
         <div className="col-sm-12 col-md-6 alert alert-warning p-3 m-0">
-          <h3>ATV</h3>
+          <h3>Shooting Range</h3>
           <p>
-            Embark on an unforgettable experience like no other and that too an
-            exhilarating one with the mighty 700cc Yamaha Raptor ATV Ride on
-            India's first permanent dirt track. Get ready for the ride of your
-            life! This adrenaline-charged experience on the 250 metre dirt track
-            brings maximum fun to the youth. Thrill seekers, wait no longer tame
-            the beast and unleash the monster deep within you.
+            When you stare down the barrel of a gun, what matters is which side
+            you are on. Live the excitement of shooting an open sight air rifle
+            in a competition setting and feel your breath as you squeeze the
+            trigger at Della Shooting range. This activity involves shooting
+            over a distance of 10 meters from a standing position with a 4.5 mm
+            caliber air rifle with a maximum weight of 5.5 kg. Test your skills
+            as you compete with a group of friends or colleagues at the shooting
+            range.
           </p>
         </div>
         <div className="col-sm-12 col-md-6 img-div">
-          <img src="assests/images/ATV.jpg" className="img-fluid" alt="..." />
+          <img
+            src="assests/images/Shooting.jpg"
+            className="img-fluid"
+            alt="..."
+          />
         </div>
       </div>
       <div
@@ -120,15 +126,8 @@ function ATV() {
           <h4>Safety Measures</h4>
           <ol style={{ color: "white" }}>
             <li>
-              Helmet, Elbow & Knee guard is provided and is to be worn at all
-              times.
+            Gloves, visors and a stand for resting the rifle are provided.
             </li>
-            <li>
-              Do not operate the ATV at excessive speeds. Ride at a speed that
-              is proper for the terrain visibility conditions and your
-              experience.
-            </li>
-            <li>Children are allowed only with the 'Marshals'.</li>
             <li>
               If you are pregnant, have a heart condition, neck or back
               problems, epilepsy, a neurological disorder you should not
@@ -145,4 +144,4 @@ function ATV() {
   );
 }
 
-export default ATV;
+export default Shooting;

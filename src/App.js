@@ -11,6 +11,10 @@ import ATV from "./components/ATV";
 import Bungee from "./components/Bungee";
 import Contactus from "./components/Contactus";
 import Login from "./components/Login";
+import Circadian from "./components/Circadian";
+import HighRope from "./components/HighRope";
+import Updateid from "./components/Updateid";
+import SignIn from "./components/SignIn";
 function App() {
   return (
    <>
@@ -26,8 +30,11 @@ function App() {
           <Route path="/ATV" element={<ATV/>}/>
           <Route path="/trampoline" element={<Bungee/>}/>
           <Route path="/Contactus" element={<Contactus/>}/>
-          <Route path="/Login" element={<Login/>}/>
-          
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/circadian" element={<Circadian/>}/>
+          <Route path="/HighRope" element={<HighRope/>}/>
+          <Route path="/Updateid" element={<Updateid/>}/>
+          <Route path="/SignIn" element={<SignIn/>}/>
 </Routes>
 
 

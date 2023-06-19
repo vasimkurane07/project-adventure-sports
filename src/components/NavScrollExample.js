@@ -30,9 +30,9 @@ function NavScrollExample() {
     navigate("/Virtual")
   }
   let navi3=()=>{
-    navigate("/ATV")
+    navigate("/circadian")
   }
-  let navi4=()=>{}
+  let navi4=()=>{"/circadian"}
   let navi5=()=>{}
   let navi6=()=>{}
   let navi7=()=>{
@@ -221,7 +221,7 @@ function NavScrollExample() {
 <div className="card-body">
  <h5 className="card-title text-danger">7 Thriller Factor</h5>
  <h1 className="card-text">LONGEST FLYING FOX</h1>
- <a href="#" className="btn btn-warning" onClick={navi3}>View activity</a>
+ <a href="#" className="btn btn-warning" onClick={navi2}>View activity</a>
 </div>
 </div>
 <div className=" card col-sm-4 col-md-6 card border-warning" >
@@ -229,7 +229,7 @@ function NavScrollExample() {
  <div className="card-body">
    <h5 className="card-title text-danger">7 Thriller Factore</h5>
    <h1 className="card-text">Circadian Cycle</h1>
-   <a href="#" className="btn btn-warning" onClick={navi2}>View activity</a>
+   <a href="#" className="btn btn-warning" onClick={navi3}>View activity</a>
  </div>
 </div>
 </div>

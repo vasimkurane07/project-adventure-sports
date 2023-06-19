@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import "./ATV.css";
-function ATV() {
+import "./HighRope.css";
+function HighRope() {
   const navigate = useNavigate();
 
   return (
@@ -88,18 +88,27 @@ function ATV() {
       </nav>
       <div className="row justify-content-center w-100 m-0">
         <div className="col-sm-12 col-md-6 alert alert-warning p-3 m-0">
-          <h3>ATV</h3>
+          <h3>High Rope Challenge</h3>
           <p>
-            Embark on an unforgettable experience like no other and that too an
-            exhilarating one with the mighty 700cc Yamaha Raptor ATV Ride on
-            India's first permanent dirt track. Get ready for the ride of your
-            life! This adrenaline-charged experience on the 250 metre dirt track
-            brings maximum fun to the youth. Thrill seekers, wait no longer tame
-            the beast and unleash the monster deep within you.
+            Want to get "high"? Dare to take on the Vertical Net Crossing? What
+            about the Burma Bridge? Think no further and join us for an action
+            packed experience on our amazing High Ropes Challenge Course, with 6
+            exciting obstacles! Take on each challenge head on tackling Burma
+            Loop, Horizontal Net, Burma Bridge, Swinging Bridge, Vertical Net
+            Crossing and Wooden Obstacles, with friends, family, colleagues or
+            just by yourself! Experience a unique combination of adventure, team
+            building, and personal achievement; and built for endurance and
+            problem solving skills. You can be assured of safety of the highest
+            standards of quality and not to forget: a FULLY action-packed
+            experience.
           </p>
         </div>
         <div className="col-sm-12 col-md-6 img-div">
-          <img src="assests/images/ATV.jpg" className="img-fluid" alt="..." />
+          <img
+            src="assests/images/HighRope.jpg"
+            className="img-fluid"
+            alt="..."
+          />
         </div>
       </div>
       <div
@@ -120,15 +129,11 @@ function ATV() {
           <h4>Safety Measures</h4>
           <ol style={{ color: "white" }}>
             <li>
-              Helmet, Elbow & Knee guard is provided and is to be worn at all
-              times.
+            Max weight: 100 kgs.
             </li>
             <li>
-              Do not operate the ATV at excessive speeds. Ride at a speed that
-              is proper for the terrain visibility conditions and your
-              experience.
+            The complete safety is provided and is it be worn at all times.
             </li>
-            <li>Children are allowed only with the 'Marshals'.</li>
             <li>
               If you are pregnant, have a heart condition, neck or back
               problems, epilepsy, a neurological disorder you should not
@@ -145,4 +150,4 @@ function ATV() {
   );
 }
 
-export default ATV;
+export default HighRope;
