@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+}
+
+.fitting {
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)
+  ),
+  url("https://media.istockphoto.com/id/1179235120/photo/athletic-woman-climbing-on-overhanging-cliff-rock-with-sunset-sky-background.jpg?s=612x612&w=0&k=20&c=sgI85lz57yWbjvjtT16QTHrPuMTz7YNry75IaeB9gaY=");
+background-size: cover;
+background-position: center;
+}
+
+
+.col-fit {
+  border: 3px;
+  border-style: groove;
+  border-color: black;
+  height: 60%;
+}
+
+label{
+    font-family: 'Concert One', cursive;
+}
+
+
+h2{
+    color:burlywood;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    background-color:black
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    cursor: pointer;
+}
+h1:hover{
+text-decoration: underline;
+}

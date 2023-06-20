@@ -18,6 +18,7 @@ import SignIn from "./components/SignIn";
 import Rappling from "./components/Rappling";
 import Aboutus from "./components/Aboutus";
 import Booking from "./components/Booking";
+import Register from "./components/Register"
 function App() {
   return (
    <>
@@ -28,7 +29,7 @@ function App() {
           <Route path="/Chess" element={<Chess/>} />
           <Route path="/Carrom" element={<Carrom/>} />
           <Route path="/Racecars" element={<Racecars/>} />
-          <Route path="/nav" element={<NavScrollExample/>} />
+          <Route path="/" element={<NavScrollExample/>} />
           <Route path="/Virtual" element={<Virtual/>}/>
           <Route path="/ATV" element={<ATV/>}/>
           <Route path="/trampoline" element={<Bungee/>}/>
@@ -41,6 +42,7 @@ function App() {
           <Route path="/Rappling" element={<Rappling/>}/>
           <Route path="/Aboutus" element={<Aboutus/>}/>
           <Route path="/Booking" element={<Booking/>}/>
+          <Route path="/Register" element={<Register/>}/>
 </Routes>
 
 

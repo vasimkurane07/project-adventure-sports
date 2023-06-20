@@ -8,21 +8,24 @@ const Login = () => {
 
   const handleSignInClick = async () => {
     try {
+      
       let url = `http://localhost:4000/login?email=${user.email}&password=${user.password}`;
       let res = await fetch(url);
-
+      
       if (res.status == 400) {
         let msg = await res.text();
         throw new Error(msg);
       }
       localStorage.setItem("loginstatus", "true");
       localStorage.setItem("username", `${user.Name}`);
-
+     
       alert("Login Successfull");
+      
     } catch (error) {
       alert(error.message);
       throw new Error(error.message);
     }
+    
   };
 
   const [user, setUser] = useState({
