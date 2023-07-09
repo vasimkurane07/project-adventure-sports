@@ -18,6 +18,9 @@ function Mynavlinks() {
       <Link to={"/Aboutus"}>Aboutus|</Link>
       <Link to={"/Register"}>Register|</Link>
       <Link to={"/AppointmentList"}>AppointmentList|</Link>
+      <Link to={"/Doctor"}>Doctor|</Link>
+      <Link to={"/Register2"}>Register2|</Link>
+      <Link to={"/HomePage"}>HomePage</Link>
     </>
   );
 }

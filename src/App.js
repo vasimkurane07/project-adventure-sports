@@ -20,6 +20,10 @@ import Aboutus from "./components/Aboutus";
 import Booking from "./components/Booking";
 import Register from "./components/Register"
 import AppointmentList from "./components/AppointmentList";
+import Doctor from "./components/Doctor";
+import Register2 from "./components/Register2"
+import HomePage from "./components/HomePaget";
+import User from "./components/User";
 function App() {
   return (
    <>
@@ -45,6 +49,10 @@ function App() {
           <Route path="/Booking" element={<Booking/>}/>
           <Route path="/Register" element={<Register/>}/>
           <Route path="/AppointmentList" element={<AppointmentList/>}/>
+          <Route path="/Doctor" element={<Doctor/>}/>
+          <Route path="/Register2" element={<Register2/>}/>
+          <Route path="/HomePage" element={<HomePage/>}/>
+          <Route path="/user1" element={<User/>}/>
 </Routes>
 
 
