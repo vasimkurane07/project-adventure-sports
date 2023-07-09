@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "./Register.css"
+
 function Register() {
   return (
     <>

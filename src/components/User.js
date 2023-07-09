@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './User.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { NavLink, useHistory } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
 
 function User() {
-    const history = useHistory();
+    const navigate = useNavigate();
     const [user, setUser] = useState({
        
         email: "",
@@ -28,7 +28,7 @@ function User() {
              console.log(response.data);
              if(response.data=="successfull")
              {
-                history.push('/');
+                navigate('/Aboutus');
              } else
              status=response.data;
              

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.css";
-import "./Register.css";
+import "./Book.css";
 function Booking() {
   const [booking, setBooking] = useState({
     name:"",
@@ -50,11 +50,12 @@ function Booking() {
 
   return (
     <div className="row fitting d-flex justify-content-center m-0">
-      <h1>talk with our best doctor</h1>
+      
       {sucessBox && (
-        <div className="alert alert-dark">Operation Success</div> )}
-          
+        <div className="alert alert-dark md-4">Operation Success</div> )}
+          <h1>talk with our best doctor</h1>
       <div className="col-md-6 col-sm-12 col-fit">
+      
         <h2>Make a Appointment</h2>
         <form >
           <div className="row">
@@ -116,7 +117,7 @@ function Booking() {
             </div>
           </div>
           <div>
-            <button type="submit" className="mt-4 btn btn-primary"onClick={sendData}>
+            <button type="submit" className=" btn btn-primary"onClick={sendData}>
               Submit
             </button >
           </div>
