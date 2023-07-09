@@ -95,7 +95,7 @@ let contact=()=>{
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#" style={{ color: "burlywood" }}>
-                  Adventure Activities
+                  Doctors
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -112,7 +112,7 @@ let contact=()=>{
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                    Restaurent
+                    Departments
                     </a>
                   </li>
                   <li>
@@ -130,9 +130,7 @@ let contact=()=>{
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-              </li>
+              
             </ul>
             <div className="d-flex" role="search">
               <button className="btn btn-warning me-2" type="submit" onClick={SignUp}>
@@ -142,7 +140,7 @@ let contact=()=>{
                 Sign Up
               </button>
               <button className="btn btn-warning" type="submit"onClick={book}>
-                Booking
+                Appointment
               </button>
             </div>
           </div>
@@ -152,7 +150,7 @@ let contact=()=>{
    
    <div className="carousel-inner">
      <div className="carousel-item active c-item">
-       <img src="assests/images/bungee.webp" className="d-block w-100 img-item" alt="..."/>
+       <img src="assests/images/doctors-home.jpg" className="d-block w-100 img-item" alt="..."/>
        <div className="carousel-caption d-none d-md-block add ">
          
          <h1>Unlimited Adventure with

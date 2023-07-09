@@ -1,14 +1,14 @@
 import React, { useState } from "react";
+import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.css";
 import "./Register.css";
 function Booking() {
   const [booking, setBooking] = useState({
-    date: "",
-    fname: "",
-    lname: "",
-    mobile: "",
-    members: "",
-    cmembers: "",
+    name:"",
+    email:"",
+    date:"",
+    time:"",
+    description:"",
   });
   let [sucessBox, setSuccessBox] = useState(false);
 
@@ -18,28 +18,27 @@ function Booking() {
     setBooking(newbooking);
   };
   let setFirstName = (e) => {
-    let newbooking = { ...booking, fname: e.target.value };
+    let newbooking = { ...booking, name: e.target.value };
     setBooking(newbooking);
   };
-  let setLastName = (e) => {
-    let newbooking = { ...booking, lname: e.target.value };
-    setBooking(newbooking);
-  };
-  let setMobileNo = (e) => {
-    let newbooking = { ...booking, mobile: e.target.value };
-    setBooking(newbooking);
-  };
+  
   let setAdultMembers = (e) => {
-    let newbooking = { ...booking, members: e.target.value };
+    let newbooking = { ...booking, time: e.target.value };
     setBooking(newbooking);
   };
   let setChildMembers = (e) => {
-    let newbooking = { ...booking, cmembers: e.target.value };
+    let newbooking = { ...booking, description: e.target.value };
     setBooking(newbooking);
   };
-  const handleFormSubmit = async() => {
-    let url = `http://localhost:4000/booking?date=${booking.date}&fname=${booking.fname}&lname=${booking.lname}&mobile=${booking.mobile}&members=${booking.members}&cmembers=${booking.cmembers}`;
-  await fetch(url);
+  let setEmail = (e) => {
+    let newbooking = { ...booking, email: e.target.value };
+    setBooking(newbooking);
+  };
+  function sendData(){
+    console.log(booking);
+    let url = 'http://localhost:7000/appointment';
+    axios.post(url, booking).then((response) => {
+        console.log(response.data);   })
   alert("Booking Successfull");
  
   setSuccessBox(true);
@@ -51,12 +50,12 @@ function Booking() {
 
   return (
     <div className="row fitting d-flex justify-content-center m-0">
-      <h1>Lets Dive into the Nature</h1>
+      <h1>talk with our best doctor</h1>
       {sucessBox && (
         <div className="alert alert-dark">Operation Success</div> )}
           
       <div className="col-md-6 col-sm-12 col-fit">
-        <h2>Book Now</h2>
+        <h2>Make a Appointment</h2>
         <form >
           <div className="row">
             <div className="col">
@@ -74,61 +73,50 @@ function Booking() {
               <label>First Name:</label>
               <input
                 type="text"
-                value={booking.fname}
+                value={booking.name}
                 onChange={setFirstName}
                 required
                 className="form-control form-control-lg"
               />
             </div>
           </div>
+          
           <div className="row">
             <div className="col">
-              <label>Last Name:</label>
-              <input
-                type="text"
-                value={booking.lname}
-                onChange={setLastName}
-                required
-                className="form-control form-control-lg"
-              />
-            </div>
-            <div className="col">
-              <label>Mobile No:</label>
-              <input
-                type="tel"
-                value={booking.mobile}
-                onChange={setMobileNo}
-                required
-                className="form-control form-control-lg"
-              />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col">
-              <label>No of Members - Adults:</label>
+              <label>Time</label>
               <input
                 type="number"
                 min="1"
-                value={booking.members}
+                max="23"
+                value={booking.time}
                 onChange={setAdultMembers}
                 required
                 className="form-control form-control-lg"
               />
             </div>
             <div className="col">
-              <label>No of Members - Children:</label>
+            <label>Email</label>
+            
               <input
-                type="number"
-                min="0"
-                value={booking.cmembers}
-                onChange={setChildMembers}
+                type="email"
+                value={booking.email}
+                onChange={setEmail}
                 required
                 className="form-control form-control-lg"
               />
             </div>
+            
+            
+          </div>
+          <div className="row mt-3">
+          <div className="col">
+              <label>description</label>
+              <textarea id="w3review" name="w3review" rows="4" cols="50"  value={booking.description}
+                onChange={setChildMembers} ></textarea>
+            </div>
           </div>
           <div>
-            <button type="submit" className="mt-4 btn btn-primary"onClick={handleFormSubmit}>
+            <button type="submit" className="mt-4 btn btn-primary"onClick={sendData}>
               Submit
             </button >
           </div>

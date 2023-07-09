@@ -19,6 +19,7 @@ import Rappling from "./components/Rappling";
 import Aboutus from "./components/Aboutus";
 import Booking from "./components/Booking";
 import Register from "./components/Register"
+import AppointmentList from "./components/AppointmentList";
 function App() {
   return (
    <>
@@ -43,6 +44,7 @@ function App() {
           <Route path="/Aboutus" element={<Aboutus/>}/>
           <Route path="/Booking" element={<Booking/>}/>
           <Route path="/Register" element={<Register/>}/>
+          <Route path="/AppointmentList" element={<AppointmentList/>}/>
 </Routes>
 
 
